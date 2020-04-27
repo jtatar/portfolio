@@ -1,3 +1,7 @@
+:root{
+  --main-color-background: rgb(190,66,66)
+}
+
 .App {
   text-align: center;
 }
@@ -5,7 +9,7 @@
 .header{
   flex: 0 0 auto;
   display: grid;
-  grid-template-columns: 240px 1fr 240px;
+  grid-template-columns: 240px 1fr 120px;
   background-color: rgb(255,255,255);
   align-items: center;
   padding-left: 24px;
@@ -45,12 +49,24 @@ a:hover{
   background-color: rgb(240,240,240);
 }
 
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  background-color: var(--main-color-background);
+}
+
+.socials a{
+  margin: 0px;
+}
+
 .border::after{
   bottom: -14px;
   left: 0px;
   right: 0px;
   position: absolute;
   height: 5px;
-  background-color: black;
+  background-color: var(--main-color-background);
   content: "";
 }
