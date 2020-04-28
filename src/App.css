@@ -2,6 +2,12 @@
   --main-color-background: rgb(190,66,66)
 }
 
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -69,4 +75,18 @@ a:hover{
   height: 5px;
   background-color: var(--main-color-background);
   content: "";
+}
+
+.footer{
+  position: fixed;
+  display: block;
+  background-color: var(--main-color-background);
+  height: 60px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.wrapper {
+height: 100vh;
 }

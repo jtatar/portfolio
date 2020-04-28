@@ -1,13 +1,12 @@
 import React from 'react';
 import { Github, Linkedin } from '@icons-pack/react-simple-icons'
 import About from './Components/About/About'
-import Home from './Components/Home/Home'
 import Projects from './Components/Projects/Projects'
 import Technologies from './Components/Technologies/Technologies'
-import Navigation from './Components/Navigation/Navigation'
 import Socials from './Components/Socials/Socials'
 import logo from './logo.svg';
 import './App.css';
+import Home from './Components/Home/Home'
 import {
   BrowserRouter as Router,
   Switch,
@@ -43,7 +42,7 @@ class App extends React.Component {
   render(){
     return (
       <Router>
-        <div>
+        <div className='wrapper'>
           <header className='header'>
             <div>
               <h2 className='logo'>Jakub Tatar.</h2>
@@ -73,12 +72,12 @@ class App extends React.Component {
               <Projects />
             </Route>
             <Route path="/">
-              <Home />
+              <Home toggleNavBar = {this.toggleNavBar} technologiesActive={this.state.technologiesActive}/>
             </Route>
           </Switch>
-          <footer>
+          {!this.state.homeActive ? <footer className='footer'>
             Elo
-          </footer>
+          </footer> : null}
         </div>
       </Router>
     );
