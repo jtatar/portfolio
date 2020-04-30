@@ -85,7 +85,7 @@ p{
 }
 
 .background::after{
-    background-image: url('../../Images/background.gif');
+    background-image: url('../../Images/background.png');
     background-size: cover;
     content: "";
     display: block;
