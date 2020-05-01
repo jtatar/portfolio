@@ -6,6 +6,7 @@ html {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background-color: rgb(41, 47, 53);
 }
 
 .App {
@@ -36,7 +37,7 @@ html {
   box-sizing: border-box;
 }
 
-a{
+.navbar a{
   display: inline-flex;
   position: relative;
   align-items: center;
@@ -51,7 +52,7 @@ a{
   border-radius: 4px;
 }
 
-a:hover{
+.navbar a:hover{
   background-color: rgb(240,240,240);
 }
 
@@ -68,7 +69,7 @@ a:hover{
 }
 
 .border::after{
-  bottom: -14px;
+  bottom: -11px;
   left: 0px;
   right: 0px;
   position: absolute;
@@ -79,14 +80,25 @@ a:hover{
 
 .footer{
   position: fixed;
-  display: block;
+  display: flex;
   background-color: var(--main-color-background);
   height: 60px;
   bottom: 0px;
   left: 0px;
   width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer p{
+  font-size: 16px;
+  color: rgb(41, 47, 53);
 }
 
 .wrapper {
 height: 100vh;
+margin-bottom: 60px;
+position: relative;
+overflow-y: auto;
+overflow-x: hidden;
 }

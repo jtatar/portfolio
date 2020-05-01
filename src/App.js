@@ -42,7 +42,7 @@ class App extends React.Component {
   render(){
     return (
       <Router>
-        <div className='wrapper'>
+        <div className='wrapper' style={{overflowY:this.state.homeActive ? 'hidden' : 'auto'}}>
           <header className='header'>
             <div>
               <h2 className='logo'>Jakub Tatar.</h2>
@@ -53,10 +53,10 @@ class App extends React.Component {
               <Link onClick={() => this.toggleNavBar(false,false,true,'rgb(71,199,100)')} className={this.state.projectsActive ? 'border' : ''} to="/projects">Projects</Link>
             </nav>
             <nav className='socials' >
-              <a target="_blank" href='https://github.com/jtatar'>
+              <a className='navbarLinks' target="_blank" href='https://github.com/jtatar'>
                 <Github color="#ffffff" size={24}/>
               </a>
-              <a target="_blank" href='https://www.linkedin.com/in/jakub-tatar-0643411a8/'>
+              <a className='navbarLinks' target="_blank" href='https://www.linkedin.com/in/jakub-tatar-0643411a8/'>
                 <Linkedin color="#ffffff" size={24}/>
               </a>
             </nav>
@@ -76,7 +76,7 @@ class App extends React.Component {
             </Route>
           </Switch>
           {!this.state.homeActive ? <footer className='footer'>
-            Elo
+            <p>© 2020 Jakub Tatar</p>
           </footer> : null}
         </div>
       </Router>

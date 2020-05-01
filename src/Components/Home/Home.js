@@ -41,10 +41,10 @@ class Home extends React.Component{
                         Hello, I'm Jakub a <br/>
                         Full stack Developer.
                     </h1>
-                    <p>
+                    <p className='homeText'>
                         I am a student at silesian university of technology.<br/> I create my apps with HTML, CSS, JS, React and Node.
                     </p>
-                    <Link className='button' onClick={() => toggleNavBar(false,true,false,'rgb(255,210,78)')} className={technologiesActive ? 'border' : ''} to="/technologies">Technologies</Link>
+                    <Link className='button' onClick={() => toggleNavBar(false,true,false,'rgb(255,210,78)')} className={technologiesActive ? 'border' : ''} className='navbarLinks' to="/technologies">Technologies</Link>
                 </div>
                 <div style={{transform: `translate3d(${this.state.backgroundX}px, 0px, 0px)`,transition:'.2s'}} className='background'></div>
                 <div style={{transform: `translate3d(${this.state.frontX}px, 0px, 0px)`,transition:'.2s'}} className='front'></div>
