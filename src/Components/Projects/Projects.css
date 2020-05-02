@@ -1,4 +1,5 @@
 .projects{
+    position: relative;
     display: flex;
     background-color: rgb(41,47,53);
     width: 100%;
@@ -14,18 +15,18 @@
     max-width: 1200px;
     width: 100%;
     margin: 0px auto;
+    padding-right: 48px;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     padding-bottom: 80px;
 }
 
 .element{
-    margin-right: 48px;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
-    background-color: var(--main-color-background)
+    background-color: var(--main-color-background);
 }
 
 .technologies{
@@ -43,7 +44,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    width: 100%;
+    width: auto;
     flex: 1 1 auto;
     padding: 24px;
     order: 2;
@@ -137,6 +138,7 @@ img{
 
     .projectDescription{
         width: 50%;
+        margin-bottom: 80px;
     }
 }
 
