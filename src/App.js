@@ -1,9 +1,7 @@
 import React from 'react';
 import { Github, Linkedin } from '@icons-pack/react-simple-icons'
-import About from './Components/About/About'
 import Projects from './Components/Projects/Projects'
-import Technologies from './Components/Technologies/Technologies'
-import Socials from './Components/Socials/Socials'
+import Technologies from './Components/Experience/Experience'
 import logo from './logo.svg';
 import './App.css';
 import Home from './Components/Home/Home'
@@ -13,11 +11,12 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Experience from './Components/Experience/Experience';
 
 
 const initialState ={
   homeActive: true,
-  technologiesActive: false,
+  experienceActive: false,
   projectsActive: false,
   mainColor: 'rgb(190,66,66)'
 }
@@ -29,14 +28,27 @@ class App extends React.Component {
     this.state = initialState;
   }
 
-  toggleNavBar = (home, technologies, projects, color) => {
+  toggleNavBar = (home, projects, experience, color) => {
     this.setState({
       homeActive: home,
-      technologiesActive: technologies,
+      experienceActive: experience,
       projectsActive: projects,
       mainColor: color
     })
     document.documentElement.style.setProperty('--main-color-background',color)
+    this.updateTitle(home, projects, experience)
+  }
+
+  updateTitle(home, projects, experience){
+    let title = ''
+    if(home){
+      title = 'Home'
+    } else if (projects){
+      title = 'Projects'
+    } else {
+      title = 'Experience'
+    }
+    document.title = `Jakub Tatar - ${title}`
   }
 
   render(){
@@ -49,8 +61,8 @@ class App extends React.Component {
             </div>
             <nav className='navbar'>
               <Link onClick={() => this.toggleNavBar(true,false,false,'rgb(190,66,66)')} className={this.state.homeActive ? 'border' : ''} to="/">Home</Link>
-              <Link onClick={() => this.toggleNavBar(false,true,false,'rgb(255,210,78)')} className={this.state.technologiesActive ? 'border' : ''} to="/technologies">Technologies</Link>
-              <Link onClick={() => this.toggleNavBar(false,false,true,'rgb(71,199,100)')} className={this.state.projectsActive ? 'border' : ''} to="/projects">Projects</Link>
+              <Link onClick={() => this.toggleNavBar(false,true,false,'rgb(71,199,100)')} className={this.state.projectsActive ? 'border' : ''} to="/projects">Projects</Link>
+              <Link onClick={() => this.toggleNavBar(false,false,true,'rgb(255,210,78)')} className={this.state.experienceActive ? 'border' : ''} to="/experience">Experience</Link>
             </nav>
             <nav className='socials' >
               <a className='navbarLinks' target="_blank" href='https://github.com/jtatar'>
@@ -65,11 +77,11 @@ class App extends React.Component {
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/technologies">
-              <Technologies />
+            <Route path="/experience">
+              <Experience toggleNavBar ={this.toggleNavBar}/>
             </Route>
             <Route path="/projects">
-              <Projects />
+              <Projects toggleNavBar ={this.toggleNavBar}/>
             </Route>
             <Route path="/">
               <Home toggleNavBar = {this.toggleNavBar} technologiesActive={this.state.technologiesActive}/>
