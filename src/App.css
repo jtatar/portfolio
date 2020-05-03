@@ -1,5 +1,6 @@
 :root{
-  --main-color-background: rgb(190,66,66)
+  --main-color-background: rgb(190,66,66);
+  --mobile-navbar-open: none;
 }
 
 html {
@@ -99,4 +100,79 @@ html {
 height: 100vh;
 overflow-y: auto;
 overflow-x: hidden;
+}
+
+.icon{
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width:720px){
+  .icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: var(--main-color-background);
+    order: 1;
+  }
+
+  .logo{
+    order:2;
+    padding-left: 24px;
+  }
+
+  .icon img{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .socials{
+    justify-content: center;
+    height: 40px;
+    background-color: var(--main-color-background);
+    width: 100%;
+    display: var(--mobile-navbar-open);
+  }
+
+  .navbarLinks{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .navbar{
+    width: 100%;
+    display: var(--mobile-navbar-open);
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 24px;
+  }
+
+  .navbar a{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .border::after{
+    bottom: 0px;
+    left: -11px;
+    right: 0px;
+    position: absolute;
+    height: 40px;
+    width: 5px;
+    background-color: var(--main-color-background);
+    content: "";
+  }
+
+  .mobileNavbarWrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 80px;
+  }
+
+  .header{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
 }

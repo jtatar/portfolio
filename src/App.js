@@ -4,6 +4,7 @@ import Projects from './Components/Projects/Projects'
 import Technologies from './Components/Experience/Experience'
 import logo from './logo.svg';
 import './App.css';
+import icon from './Images/hamburger.png'
 import Home from './Components/Home/Home'
 import {
   BrowserRouter as Router,
@@ -18,7 +19,8 @@ const initialState ={
   homeActive: true,
   experienceActive: false,
   projectsActive: false,
-  mainColor: 'rgb(190,66,66)'
+  mainColor: 'rgb(190,66,66)',
+  isMobileNavbarOpen: false
 }
 
 class App extends React.Component {
@@ -51,13 +53,28 @@ class App extends React.Component {
     document.title = `Jakub Tatar - ${title}`
   }
 
+  toggleMobileBar = () => {
+    !this.state.isMobileNavbarOpen ? document.documentElement.style.setProperty('--mobile-navbar-open','flex')
+    : document.documentElement.style.setProperty('--mobile-navbar-open','none')
+    
+    this.setState(prevState => ({
+      ...prevState,
+      isMobileNavbarOpen: !prevState.isMobileNavbarOpen
+    }))
+  }
+
   render(){
     return (
       <Router>
         <div className='wrapper' style={{overflowY:this.state.homeActive ? 'hidden' : 'auto'}}>
           <header className='header'>
-            <div>
-              <h2 className='logo'>Jakub Tatar.</h2>
+            <div className='mobileNavbarWrapper'>
+              <div>
+                <h2 className='logo'>Jakub Tatar.</h2>
+              </div>
+              <div className='icon' onClick={this.toggleMobileBar}>
+                <img src={icon}/>
+              </div>
             </div>
             <nav className='navbar'>
               <Link onClick={() => this.toggleNavBar(true,false,false,'rgb(190,66,66)')} className={this.state.homeActive ? 'border' : ''} to="/">Home</Link>
