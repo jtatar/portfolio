@@ -23,7 +23,7 @@ class Projects extends React.Component {
                         image = {jokes}
                         alt = {'Jokes app'}
                         title = 'Humor enhancer'
-                        text = 'An app made for a project at university. It allows you to register, browse jokes, add them to your favourites and check other people profiles.'
+                        text = 'An app made for a project at university. It allows you to register, browse jokes, add them to favourite list and check other people profiles.'
                         technologies = {['Javascript','React','CSS','Docker','Node','Redis','Express.js','PostgreSQL','Knex.js']}
                         github = 'https://github.com/jtatar/polsl-tai'
                         githubApi = 'https://github.com/jtatar/polsl-tai-api'
@@ -55,7 +55,7 @@ class Projects extends React.Component {
                         image = {game}
                         alt = {'15 puzzle'}
                         title = '15 puzzle'
-                        text = 'Adaptation of common old puzzle called 15 puzzle. Player have to move number to sort them in right order.'
+                        text = 'Adaptation of common old puzzle called 15 puzzle. Player has to move numbers to sort them in right order.'
                         technologies = {['Unity','C#','Android']}
                         github = 'https://github.com/jtatar/15puzzle'
                         reverse = {false}

@@ -20,7 +20,7 @@ class Experience extends React.Component {
                     <Element
                         image = {itsilesia}
                         title = 'IT Silesia'
-                        text = 'I have been a trainee for 2 months. I started with developing an arkanoid game and later in four-person team I was developing an app in Unity for a monitors with touchscreens.'
+                        text = 'I was an apprentice for 2 months. I started by developing the arkanoid game, later in a team of four I developed an app in Unity for a monitors with touchscreens.'
                         technologies = {['Unity','C#','Git']}
                         reverse = {true}
                     />
@@ -28,7 +28,7 @@ class Experience extends React.Component {
                     <Element
                         image = {bmz}
                         title = 'BMZ Poland'
-                        text = 'I worked there in an IT team for 8 months, helped moving to the new headquaters, worked in internal helpdesk, dealt with daily occurring problems and configured new computers for new employees.'
+                        text = "I worked there in the IT department for 8 months. I helped in moving to the company's new headquaters, I worked in an internal helpdesk, dealt with everyday problems and set up computers for new employees."
                         technologies = {['IT Helpdesk']}
                         reverse = {false}
                     />
