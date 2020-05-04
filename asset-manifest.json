@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cb8bfda2.chunk.css",
-    "main.js": "/portfolio/static/js/main.b13ddff8.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.b13ddff8.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.0d4be50f.chunk.css",
+    "main.js": "/portfolio/static/js/main.b2e9fe2b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.b2e9fe2b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f18b6ef5.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f18b6ef5.js.map",
-    "static/js/2.8f82e376.chunk.js": "/portfolio/static/js/2.8f82e376.chunk.js",
-    "static/js/2.8f82e376.chunk.js.map": "/portfolio/static/js/2.8f82e376.chunk.js.map",
+    "static/js/2.6d9b7807.chunk.js": "/portfolio/static/js/2.6d9b7807.chunk.js",
+    "static/js/2.6d9b7807.chunk.js.map": "/portfolio/static/js/2.6d9b7807.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.84672c6449ac4b20d51f27f3b353139b.js": "/portfolio/precache-manifest.84672c6449ac4b20d51f27f3b353139b.js",
+    "precache-manifest.6e4e53b2f0b7945b7ff6921a27a8fd30.js": "/portfolio/precache-manifest.6e4e53b2f0b7945b7ff6921a27a8fd30.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.cb8bfda2.chunk.css.map": "/portfolio/static/css/main.cb8bfda2.chunk.css.map",
-    "static/js/2.8f82e376.chunk.js.LICENSE.txt": "/portfolio/static/js/2.8f82e376.chunk.js.LICENSE.txt",
-    "static/media/bmz.png": "/portfolio/static/media/bmz.f6e11f14.png",
-    "static/media/facerecognition.png": "/portfolio/static/media/facerecognition.24a7fed9.png",
-    "static/media/Home.css": "/portfolio/static/media/front.39581bc5.gif",
+    "static/css/main.0d4be50f.chunk.css.map": "/portfolio/static/css/main.0d4be50f.chunk.css.map",
+    "static/js/2.6d9b7807.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6d9b7807.chunk.js.LICENSE.txt",
+    "static/media/bmz.png": "/portfolio/static/media/bmz.5973cc33.png",
+    "static/media/facerecognition.png": "/portfolio/static/media/facerecognition.48ed2f9c.png",
+    "static/media/Home.css": "/portfolio/static/media/front.b53b38fd.gif",
     "static/media/game.jpg": "/portfolio/static/media/game.44c3d9e6.jpg",
-    "static/media/itsilesia.png": "/portfolio/static/media/itsilesia.d89712ce.png",
-    "static/media/jokes.png": "/portfolio/static/media/jokes.5d16e8a0.png",
+    "static/media/itsilesia.png": "/portfolio/static/media/itsilesia.bba8c03f.png",
+    "static/media/jokes.png": "/portfolio/static/media/jokes.c85b3d3c.png",
     "static/media/python.png": "/portfolio/static/media/python.3640846b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f18b6ef5.js",
-    "static/js/2.8f82e376.chunk.js",
-    "static/css/main.cb8bfda2.chunk.css",
-    "static/js/main.b13ddff8.chunk.js"
+    "static/js/2.6d9b7807.chunk.js",
+    "static/css/main.0d4be50f.chunk.css",
+    "static/js/main.b2e9fe2b.chunk.js"
   ]
 }
