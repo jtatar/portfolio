@@ -25,7 +25,6 @@ class Home extends React.Component{
         } else{
             newX = ((event.clientX-0)/(middle-0))*(0+48)-48
         }
-        console.log(newX);
         this.setState({
             backgroundX: newX,
             frontX: newX/2
@@ -33,7 +32,7 @@ class Home extends React.Component{
     }
 
     render(){
-        const {toggleNavBar, technologiesActive} = this.props;
+        const {toggleNavBar} = this.props;
         return(
             <main onMouseMove={this.mouseMovement} className='home'>
                 <div className='text'>
@@ -44,7 +43,7 @@ class Home extends React.Component{
                     <p className='homeText'>
                         I am a student at silesian university of technology.<br/> I create my apps with HTML, CSS, JS, React and Node.
                     </p>
-                    <Link className='button' onClick={() => toggleNavBar(false,true,false,'rgb(255,210,78)')} className={technologiesActive ? 'border' : ''} className='navbarLinks' to="/projects">Projects</Link>
+                    <Link onClick={() => toggleNavBar(false,true,false,'rgb(255,210,78)')} className='navbarLinks button' to="/projects">Projects</Link>
                 </div>
                 <div style={{transform: `translate3d(${this.state.backgroundX}px, 0px, 0px)`,transition:'.2s'}} className='background'></div>
                 <div style={{transform: `translate3d(${this.state.frontX}px, 0px, 0px)`,transition:'.2s'}} className='front'></div>

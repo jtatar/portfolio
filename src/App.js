@@ -1,6 +1,5 @@
 import React from 'react';
 import { Github, Linkedin } from '@icons-pack/react-simple-icons'
-import logo from './logo.svg';
 import './App.css';
 import icon from './Images/hamburger.png'
 import {
@@ -73,7 +72,7 @@ class App extends React.Component {
                 <h2 className='logo'>Jakub Tatar.</h2>
               </div>
               <div className='icon' onClick={this.toggleMobileBar}>
-                <img src={icon}/>
+                <img src={icon} alt='Mobile menu'/>
               </div>
             </div>
             <nav className='navbar'>
@@ -82,10 +81,10 @@ class App extends React.Component {
               <Link onClick={() => this.toggleNavBar(false,false,true,'rgb(255,210,78)')} className={this.state.experienceActive ? 'border' : ''} to="/experience">Experience</Link>
             </nav>
             <nav className='socials' >
-              <a className='navbarLinks' target="_blank" href='https://github.com/jtatar'>
+              <a className='navbarLinks' target="_blank" rel="noopener noreferrer" href='https://github.com/jtatar'>
                 <Github color="#ffffff" size={24}/>
               </a>
-              <a className='navbarLinks' target="_blank" href='https://www.linkedin.com/in/jakub-tatar-0643411a8/'>
+              <a className='navbarLinks' target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/jakub-tatar-0643411a8/'>
                 <Linkedin color="#ffffff" size={24}/>
               </a>
             </nav>
@@ -101,7 +100,7 @@ class App extends React.Component {
               <Projects toggleNavBar ={this.toggleNavBar}/>
             </Route>
             <Route path="/">
-              <Home toggleNavBar = {this.toggleNavBar} technologiesActive={this.state.technologiesActive}/>
+              <Home toggleNavBar = {this.toggleNavBar}/>
             </Route>
           </Switch>
           {!this.state.homeActive ? <footer className='footer'>

@@ -80,7 +80,8 @@ html {
 }
 
 .footer{
-  position: absolute;
+  z-index: 5;
+  position: fixed;
   background-color: var(--main-color-background);
   height: 60px;
   bottom: 0;
