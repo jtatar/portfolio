@@ -64,7 +64,7 @@ class App extends React.Component {
 
   render(){
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className='wrapper' style={{overflowY:this.state.homeActive ? 'hidden' : 'auto'}}>
           <header className='header'>
             <div className='mobileNavbarWrapper'>
