@@ -1,4 +1,5 @@
 .home{
+    animation: myfirst 3s linear;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,0 +1,33 @@
+.elementsWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    height: auto;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+    padding-right: 48px;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    padding-bottom: 80px;
+}
+
+.pageTitle{
+    grid-column: span 2 / auto;
+    text-align: left;
+}
+
+@media (min-width:1300px){
+    .elementsWrapper{
+        grid-column-gap: 48px;
+        grid-row-gap: 48px;
+    }
+}
+
+@media(max-width:720px){
+    .elementsWrapper{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+}

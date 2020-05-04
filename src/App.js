@@ -1,17 +1,17 @@
 import React from 'react';
 import { Github, Linkedin } from '@icons-pack/react-simple-icons'
-import Projects from './Components/Projects/Projects'
-import Technologies from './Components/Experience/Experience'
 import logo from './logo.svg';
 import './App.css';
 import icon from './Images/hamburger.png'
-import Home from './Components/Home/Home'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+
+import Projects from './Components/Projects/Projects';
+import Home from './Components/Home/Home';
 import Experience from './Components/Experience/Experience';
 
 
