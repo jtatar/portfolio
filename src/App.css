@@ -1,10 +1,9 @@
-:root{
-  --main-color-background: rgb(190,66,66);
+:root {
+  --main-color-background: rgb(190, 66, 66);
   --mobile-navbar-open: none;
 }
 
 html {
-  height: 100%;
   width: 100%;
   overflow: hidden;
   background-color: rgb(41, 47, 53);
@@ -15,15 +14,25 @@ html {
 }
 
 .wrapper {
-height: 100vh;
-overflow-y: auto;
-overflow-x: hidden;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-@keyframes myfirst{
-  0%    {opacity: 0;}
-  25%    {opacity: 25;}
-  50%    {opacity: 50;}
-  75%    {opacity: 75;}
-  100%  {opacity: 100;}
+@keyframes myfirst {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 25;
+  }
+  50% {
+    opacity: 50;
+  }
+  75% {
+    opacity: 75;
+  }
+  100% {
+    opacity: 100;
+  }
 }

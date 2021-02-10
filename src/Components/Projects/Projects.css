@@ -1,17 +1,15 @@
-.mainContentProjects{
-    position: relative;
-    display: flex;
-    background-color: rgb(41,47,53);
-    width: 100%;
-    height: 100%;
-    padding: 24px 24px;
-    animation: myfirst 3s linear;
-    margin-bottom: 850px;
+.mainContentProjects {
+  position: relative;
+  display: flex;
+  background-color: rgb(41, 47, 53);
+  width: 100%;
+  height: calc(100%-60px);
+  padding: 24px 24px;
+  animation: myfirst 3s linear;
 }
 
-@media (min-width:1300px){
-
-    .mainContentProjects .elementDescription{
-        margin-bottom: 20px;
-    }
+@media (min-width: 1300px) {
+  .mainContentProjects .elementDescription {
+    margin-bottom: 20px;
+  }
 }
