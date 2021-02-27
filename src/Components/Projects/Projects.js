@@ -4,6 +4,7 @@ import python from '../../Images/python.png';
 import ticketing from '../../Images/ticketing.png';
 import facerecognition from '../../Images/facerecognition.png';
 import game from '../../Images/game.jpg';
+import movie from '../../Images/movie.png';
 import Element from '../Element/Element';
 import ElementsHolder from '../ElementsHolder/ElementsHolder';
 import './Projects.css';
@@ -18,6 +19,22 @@ class Projects extends React.Component {
     return (
       <main className="mainContentProjects">
         <ElementsHolder pageTitle="Projects.">
+          <Element
+            image={movie}
+            alt={'Video Player'}
+            title="Video Player"
+            text="Watch2gether clone, allowing users to watch synchronized videos together from many sources"
+            technologies={[
+              'Javascript',
+              'Typescript',
+              'React',
+              'Node',
+              'Express.js',
+              'Server-sent events',
+            ]}
+            githubProject="https://github.com/jtatar/VideoPlayer"
+            reverse={true}
+          />
           <Element
             image={ticketing}
             alt={'Ticketing app'}
