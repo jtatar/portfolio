@@ -5,8 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p>
-        © 2020 Jakub Tatar, inspired by{' '}
-        <a href="https://www.stevemeredith.com/">Steve Meredith</a>
+        © 2022 Jakub Tatar
       </p>
     </footer>
   );

@@ -1,10 +1,7 @@
 .footer {
-  z-index: 5;
-  position: fixed;
+  display: flex;
   background-color: var(--main-color-background);
   height: 60px;
-  bottom: 0;
-  left: 0px;
   width: 100%;
   text-align: center;
   justify-content: center;

@@ -35,12 +35,11 @@ class Home extends React.Component {
       <main onMouseMove={this.mouseMovement} className="home">
         <div className="text">
           <h1>
-            Hello, I'm Jakub I want to be <br />
+            Hello, I'm Jakub I am <br />
             <div className="animation">
               <ul>
                 <li>Fullstack</li>
                 <li>Software</li>
-                <li>Backend</li>
                 <li>Frontend</li>
               </ul>
             </div>
